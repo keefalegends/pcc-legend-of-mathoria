@@ -7,11 +7,36 @@ public class MenuController : MonoBehaviour
 {
     public GameObject panelSetting;
     public TMP_InputField inputNama; // Slot untuk narik InputField nanti
+    public GameObject Credits;
+    public GameObject howto;
+
+    // 2. Fungsi buat nampilin panel pas tombol Credits diklik
+    public void BukaCredits()
+    {
+        Credits.SetActive(true);
+    }
+
+    // 3. Fungsi buat ngumpetin panel pas tombol X merah diklik
+    public void TutupCredits()
+    {
+        Credits.SetActive(false);
+    }
+
+    public void BukaHowTo()
+    {
+        howto.SetActive(true);
+    }
+
+    // 3. Fungsi buat ngumpetin panel pas tombol X merah diklik
+    public void TutupHowTo()
+    {
+        howto.SetActive(false);
+    }
 
     public void KeLogin()
-    {
-        SceneManager.LoadScene("LoginScene");
-    }
+        {
+            SceneManager.LoadScene("LoginScene");
+        }
 
     public void KembaliKeMenu()
     {
